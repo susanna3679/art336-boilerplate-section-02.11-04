@@ -28,7 +28,8 @@ nav[role=navigation] li {
 nav[role=navigation] li a {
     display: block;
 }
-		
+
+// Change to your desired size
 @media screen and (min-width: $tablet) {
     a.menu-link {
         display: none;

@@ -188,10 +188,36 @@ $padding: 6px;
     margin-bottom: 0;
 }
 
+.row-no-gutter .padding [class^="col-"],
 .row.padding [class^="col"],
 [class^="col-"].padding {
     box-sizing: border-box;
     padding: $padding;
+}
+
+.outer {
+    width: 100%;
+    margin-bottom: $gutter;
+}
+
+.outer .row-no-gutter:last-of-type [class^="col-"],
+.outer .row:last-of-type [class^="col-"],
+.fixed .row-no-gutter:last-of-type [class^="col-"],
+.fixed .row:last-of-type [class^="col-"] {
+    margin-bottom: 0;
+}
+
+.shift-right {
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
 }
 
 .vcenter {
